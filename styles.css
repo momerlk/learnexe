@@ -1,0 +1,242 @@
+
+
+.avatar {
+    width : 200px;
+    height : 200px;
+    border-radius: 50%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track
+{
+	background-color: #F4EFED;
+}
+
+html::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F4EFED;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	background-color: rgb(58, 58, 58);
+}
+
+.hstack {
+    display : flex;
+    flex-direction: row;
+}
+
+html, body {
+    margin : 0;
+    background-color: #F4EFED;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+.image {
+    border-radius: 4px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.img-cards {
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.img-card {
+    height: 80%;
+    margin : 10%;
+    max-width: 80%;
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+
+
+
+.primary {
+    background-color: rgb(58, 58, 58);
+    color : #F4EFED;
+    border : none;
+    border-radius: 5px;
+    margin-top : 12px;
+    font-size: 15px;
+    padding : 14px 28px;
+}
+.primary:hover {
+    background-color: rgb(44, 44, 44);
+}
+.primary:active {
+    background-color: rgb(31, 31, 31);
+}
+
+.heading {
+    font-size : 500%;
+    color : rgb(16, 24, 71);
+}
+
+.link {
+    font-size: 18px;
+    text-decoration: solid;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: white;
+}
+
+
+@media (min-width: 600px) {
+  .img-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .img-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .img-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+
+#hero-vid {
+    position: absolute;
+    right: 0;
+    bottom: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#hero-content {
+  position: relative;
+  top : 7vh;
+  color: rgb(26, 25, 25);
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+#mission-left , #mission-right {
+    height: 90vh;
+    width: 100%;
+}
+#mission-left {
+    padding: 10%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #EBE3D5;
+    color : #776B5D;
+    padding-bottom: 30px;
+}
+
+
+@media screen and (min-width : 1200px) {
+    #mission-left , #mission-right {
+        height : 70vh;
+    } 
+}
+
+#projects {
+    padding : 5%;
+    margin-left : 20%;
+    margin-right : 20%;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+#partners {
+    text-align: center;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+
+#wings {
+    margin-left : 15%;
+    background-color: #F4EFED;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#education {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("images/education.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 100vw;
+    min-height: 75vh;
+    color : white;
+}
+
+.topnav {
+  overflow: hidden;
+  position: absolute;
+  top : 2px;
+  right : 10px;
+  min-width : 55px;
+  min-height : 55px;
+  border : none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  color : black;
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: rgb(58, 58, 58);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border : none;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #F4EFED;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+
+  border : none;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(58, 58, 58);
+}
+
