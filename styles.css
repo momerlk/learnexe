@@ -139,15 +139,19 @@ html, body {
 }
 
 #hello {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("images/hello.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("images/trophy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 200px;
+    padding-top: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom : 300px;
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 70vh;
     margin-bottom: 0;
     color : white;
+    text-align: center;
 }
 
 
@@ -158,8 +162,8 @@ html, body {
 #mission-left {
     padding: 10%;
     font-family: 'Raleway', sans-serif;
-    background-color: #EBE3D5;
-    color : #776B5D;
+    background-color: #A9A9A9;
+    color : #45474B;
     padding-bottom: 30px;
 }
 
